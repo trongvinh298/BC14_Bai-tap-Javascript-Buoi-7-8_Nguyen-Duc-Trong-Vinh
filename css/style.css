@@ -1,0 +1,33 @@
+html {
+  font-family: "Noto Sans JP", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Noto Sans JP", sans-serif;
+}
+button {
+  margin-top: 20px;
+}
+#divMang,
+#divMangReal {
+  min-height: 30px;
+  background-color: rgb(201, 223, 228);
+  border-radius: 10px;
+  text-align: center;
+  color: rgb(2, 8, 95);
+}
+#divInput {
+  border-radius: 10px;
+}
+
+#newSwapArr {
+  min-height: 30px;
+  background-color: rgb(201, 223, 228);
+  border-radius: 10px;
+  text-align: center;
+  color: rgb(2, 8, 95);
+}

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div
+      id="divInput"
+      class="bg-info container text-white my-5 mx-auto py-3 row"
+    >
+      <div class="form-group col-4">
+        <label for="">Nhập vào số nguyên</label>
+        <input
+          type="number"
+          id="nhapSoNguyen"
+          class="form-control"
+          placeholder=""
+        />
+        <button type="button" id="submit" class="btn btn-primary my-3">
+          Lưu số vào mảng
+        </button>
+        <button type="button" id="unsubmit" class="btn btn-primary my-3">
+          Tạo lại
+        </button>
+      </div>
+      <div class="col-8" id="divMang">
+        <h4>Mảng của bạn</h4>
+        <div id="divMainArray"></div>
+      </div>
+
+      <div class="container my-3">
+        <button id="sumPossitveNumb" type="button" class="btn btn-primary">
+          Tổng các số dương trong mảng
+        </button>
+        <button id="countPossitveNumb" type="button" class="btn btn-primary">
+          Đếm các số dương trong mảng
+        </button>
+        <button id="minNumb" type="button" class="btn btn-primary">
+          Tìm số nhỏ nhất trong mảng
+        </button>
+        <button id="minPossitiveNumb" type="button" class="btn btn-primary">
+          Tìm số dương nhỏ nhất trong mảng
+        </button>
+        <button id="lastEven" type="button" class="btn btn-primary">
+          Tìm số chẵn cuối cùng trong mảng
+        </button>
+        <button id="firstPrime" type="button" class="btn btn-primary">
+          Tìm số nguyên tố đầu tiên trong mảng
+        </button>
+      </div>
+
+      <div class="container my-3 row">
+        <div class="form-group col-4">
+          <label for=""
+            >Nhập vào 2 vị trí muốn đổi giá trị (bắt đầu từ vị trí 0)</label
+          >
+          <input
+            type="number"
+            id="swapPos1"
+            class="form-control my-2"
+            placeholder="Vị trí 1"
+          />
+          <input
+            type="number"
+            id="swapPos2"
+            class="form-control"
+            placeholder="Vị trí 2"
+          />
+          <button id="swapNumb" type="button" class="btn btn-primary">
+            Đổi vị trí giá trị
+          </button>
+          <button id="sortIncrease" type="button" class="btn btn-primary">
+            Sắp xếp tăng dần
+          </button>
+        </div>
+        <div class="col-8">
+          <h4>Mảng mới của bạn</h4>
+          <div id="newSwapArr"></div>
+        </div>
+      </div>
+
+      <div class="form-group col-4">
+        <label for="">Nhập vào số thực</label>
+        <input
+          type="number"
+          id="nhapSoThuc"
+          class="form-control"
+          placeholder=""
+        />
+        <button type="button" id="submitReal" class="btn btn-primary my-3">
+          Lưu số vào mảng
+        </button>
+        <button type="button" id="unsubmitReal" class="btn btn-primary my-3">
+          Tạo lại
+        </button>
+      </div>
+      <div class="col-8" id="divMangReal">
+        <h4>Mảng của bạn</h4>
+        <div id="divMainArrayReal"></div>
+      </div>
+      <div class="containre my-3">
+        <button id="countInt" type="button" class="btn btn-primary">
+          Tìm số số nguyên trong mảng
+        </button>
+        <button id="compare" type="button" class="btn btn-primary">
+          So sánh số âm và số dương
+        </button>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
